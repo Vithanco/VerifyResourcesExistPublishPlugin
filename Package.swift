@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.5
 
 /**
 *  VerifyResourcesExist plugin for Publish
@@ -10,13 +10,14 @@ import PackageDescription
 
 let package = Package(
     name: "VerifyResourcesExistPublishPlugin",
+    platforms: [.macOS(.v12)],
     products: [
         .library(
             name: "VerifyResourcesExistPublishPlugin",
             targets: ["VerifyResourcesExistPublishPlugin"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/johnsundell/publish.git", from: "0.1.0")
+        .package(url: "https://github.com/johnsundell/publish.git", from: "0.9.0")
     ],
     targets: [
         .target(
