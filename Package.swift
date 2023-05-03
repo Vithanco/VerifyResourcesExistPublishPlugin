@@ -17,7 +17,7 @@ let package = Package(
             targets: ["VerifyResourcesExistPublishPlugin"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/johnsundell/publish.git", from: "0.9.0")
+        .package(name: "Publish",url: "https://github.com/johnsundell/publish.git", from: "0.9.0")
     ],
     targets: [
         .target(
